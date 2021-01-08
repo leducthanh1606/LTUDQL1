@@ -1,0 +1,12 @@
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\bin\Debug\DoAnCuoiKy.exe.config
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\bin\Debug\DoAnCuoiKy.exe
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\bin\Debug\DoAnCuoiKy.pdb
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.csprojAssemblyReference.cache
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.Form1.resources
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.Properties.Resources.resources
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.csproj.GenerateResource.cache
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.csproj.CoreCompileInputs.cache
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.exe
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.pdb
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.CauHoi.resources
+E:\HOC KY 1 NAM 3\LTQLƯD 1\DoAnCuoiKy\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.DeThi.resources
