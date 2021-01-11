@@ -19,31 +19,31 @@ namespace DoAnCuoiKy
 
         private void btn_qlchoi_Click(object sender, EventArgs e)
         {
-            CauHoi cauhoi = new CauHoi();
+            ViewCauHoi cauhoi = new ViewCauHoi();
             cauhoi.Show();
         }
 
         private void btn_qldthi_Click(object sender, EventArgs e)
         {
-            DeThi dethi = new DeThi();
+            ViewDeThi dethi = new ViewDeThi();
             dethi.Show();
         }
 
         private void btn_qlhsinh_Click(object sender, EventArgs e)
         {
-            HocSinh hs = new HocSinh();
+            ViewHocSinh hs = new ViewHocSinh();
             hs.Show();
         }
 
         private void btn_qlkthi_Click(object sender, EventArgs e)
         {
-            KyThi kythi = new KyThi();
+            ViewKyThi kythi = new ViewKyThi();
             kythi.Show();
         }
 
         private void btn_qltthu_Click(object sender, EventArgs e)
         {
-            ThiThu thithu = new ThiThu();
+            ViewThiThu thithu = new ViewThiThu();
             thithu.Show();
         }
     }

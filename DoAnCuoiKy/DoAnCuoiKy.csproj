@@ -33,6 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -47,17 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CauHoi.cs">
+    <Compile Include="Model\KetQuaRP.cs" />
+    <Compile Include="ViewCauHoi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CauHoi.Designer.cs">
-      <DependentUpon>CauHoi.cs</DependentUpon>
+    <Compile Include="ViewCauHoi.Designer.cs">
+      <DependentUpon>ViewCauHoi.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeThi.cs">
+    <Compile Include="ViewDeThi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeThi.Designer.cs">
-      <DependentUpon>DeThi.cs</DependentUpon>
+    <Compile Include="ViewDeThi.Designer.cs">
+      <DependentUpon>ViewDeThi.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -65,40 +84,50 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="HocSinh.cs">
+    <Compile Include="ViewHocSinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HocSinh.Designer.cs">
-      <DependentUpon>HocSinh.cs</DependentUpon>
+    <Compile Include="ViewHocSinh.Designer.cs">
+      <DependentUpon>ViewHocSinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="KyThi.cs">
+    <Compile Include="ViewKyThi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KyThi.Designer.cs">
-      <DependentUpon>KyThi.cs</DependentUpon>
+    <Compile Include="ViewKyThi.Designer.cs">
+      <DependentUpon>ViewKyThi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\DataClasses1.designer.cs">
+    <Compile Include="Model\LTUDQL1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
+      <DependentUpon>LTUDQL1.dbml</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThiThu.cs">
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Model\ThiSinhRP.cs" />
+    <Compile Include="ViewThiThu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThiThu.Designer.cs">
-      <DependentUpon>ThiThu.cs</DependentUpon>
+    <Compile Include="ViewThiThu.Designer.cs">
+      <DependentUpon>ViewThiThu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CauHoi.resx">
-      <DependentUpon>CauHoi.cs</DependentUpon>
+    <EmbeddedResource Include="ViewCauHoi.resx">
+      <DependentUpon>ViewCauHoi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeThi.resx">
-      <DependentUpon>DeThi.cs</DependentUpon>
+    <EmbeddedResource Include="ViewDeThi.resx">
+      <DependentUpon>ViewDeThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewHocSinh.resx">
+      <DependentUpon>ViewHocSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewKyThi.resx">
+      <DependentUpon>ViewKyThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\KetQuaRP.rdlc" />
+    <EmbeddedResource Include="Report\PrintThiSinhTheoKyThi.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -108,14 +137,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Model\DataClasses1.dbml">
+    <EmbeddedResource Include="ViewThiThu.resx">
+      <DependentUpon>ViewThiThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Model\LTUDQL1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <LastGenOutput>LTUDQL1.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Model\DataClasses1.dbml.layout">
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    <None Include="Model\LTUDQL1.dbml.layout">
+      <DependentUpon>LTUDQL1.dbml</DependentUpon>
     </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DoAnCuoiKy.Model.KetQua.datasource" />
+    <None Include="Properties\DataSources\DoAnCuoiKy.Model.KetQuaRP.datasource" />
+    <None Include="Properties\DataSources\DoAnCuoiKy.Model.KyThi.datasource" />
+    <None Include="Properties\DataSources\DoAnCuoiKy.Model.ThiSinhInKyThi.datasource" />
+    <None Include="Properties\DataSources\DoAnCuoiKy.Model.ThiSinhRP.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -129,7 +167,21 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
