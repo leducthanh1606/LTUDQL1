@@ -32,6 +32,14 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgv_CauHoi = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtDAD = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtDAC = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtDAB = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtDAA = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtDA = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtND = new System.Windows.Forms.TextBox();
@@ -43,14 +51,6 @@
             this.txtMaCH = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Sua = new System.Windows.Forms.Button();
-            this.txtDAA = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtDAB = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtDAC = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtDAD = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -98,6 +98,7 @@
             this.dgv_CauHoi.Location = new System.Drawing.Point(3, 18);
             this.dgv_CauHoi.Name = "dgv_CauHoi";
             this.dgv_CauHoi.ReadOnly = true;
+            this.dgv_CauHoi.RowHeadersVisible = false;
             this.dgv_CauHoi.RowHeadersWidth = 51;
             this.dgv_CauHoi.RowTemplate.Height = 24;
             this.dgv_CauHoi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -133,6 +134,74 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chi Tiết";
+            // 
+            // txtDAD
+            // 
+            this.txtDAD.Location = new System.Drawing.Point(141, 425);
+            this.txtDAD.Name = "txtDAD";
+            this.txtDAD.Size = new System.Drawing.Size(232, 22);
+            this.txtDAD.TabIndex = 42;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.Location = new System.Drawing.Point(37, 428);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(69, 17);
+            this.label9.TabIndex = 41;
+            this.label9.Text = "Đáp Án D";
+            // 
+            // txtDAC
+            // 
+            this.txtDAC.Location = new System.Drawing.Point(141, 376);
+            this.txtDAC.Name = "txtDAC";
+            this.txtDAC.Size = new System.Drawing.Size(232, 22);
+            this.txtDAC.TabIndex = 40;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label8.Location = new System.Drawing.Point(37, 379);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(68, 17);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "Đáp Án C";
+            // 
+            // txtDAB
+            // 
+            this.txtDAB.Location = new System.Drawing.Point(141, 320);
+            this.txtDAB.Name = "txtDAB";
+            this.txtDAB.Size = new System.Drawing.Size(232, 22);
+            this.txtDAB.TabIndex = 38;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label7.Location = new System.Drawing.Point(37, 323);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 17);
+            this.label7.TabIndex = 37;
+            this.label7.Text = "Đáp Án B";
+            // 
+            // txtDAA
+            // 
+            this.txtDAA.Location = new System.Drawing.Point(141, 266);
+            this.txtDAA.Name = "txtDAA";
+            this.txtDAA.Size = new System.Drawing.Size(232, 22);
+            this.txtDAA.TabIndex = 36;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label6.Location = new System.Drawing.Point(37, 269);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 17);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "Đáp Án A";
             // 
             // txtDA
             // 
@@ -229,81 +298,13 @@
             this.btn_Sua.UseVisualStyleBackColor = true;
             this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
-            // txtDAA
-            // 
-            this.txtDAA.Location = new System.Drawing.Point(141, 266);
-            this.txtDAA.Name = "txtDAA";
-            this.txtDAA.Size = new System.Drawing.Size(232, 22);
-            this.txtDAA.TabIndex = 36;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label6.Location = new System.Drawing.Point(37, 269);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 17);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Đáp Án A";
-            // 
-            // txtDAB
-            // 
-            this.txtDAB.Location = new System.Drawing.Point(141, 320);
-            this.txtDAB.Name = "txtDAB";
-            this.txtDAB.Size = new System.Drawing.Size(232, 22);
-            this.txtDAB.TabIndex = 38;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Location = new System.Drawing.Point(37, 323);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 17);
-            this.label7.TabIndex = 37;
-            this.label7.Text = "Đáp Án B";
-            // 
-            // txtDAC
-            // 
-            this.txtDAC.Location = new System.Drawing.Point(141, 376);
-            this.txtDAC.Name = "txtDAC";
-            this.txtDAC.Size = new System.Drawing.Size(232, 22);
-            this.txtDAC.TabIndex = 40;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label8.Location = new System.Drawing.Point(37, 379);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 17);
-            this.label8.TabIndex = 39;
-            this.label8.Text = "Đáp Án C";
-            // 
-            // txtDAD
-            // 
-            this.txtDAD.Location = new System.Drawing.Point(141, 425);
-            this.txtDAD.Name = "txtDAD";
-            this.txtDAD.Size = new System.Drawing.Size(232, 22);
-            this.txtDAD.TabIndex = 42;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label9.Location = new System.Drawing.Point(37, 428);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 17);
-            this.label9.TabIndex = 41;
-            this.label9.Text = "Đáp Án D";
-            // 
-            // CauHoi
+            // ViewCauHoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1171, 555);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "CauHoi";
+            this.Name = "ViewCauHoi";
             this.Text = "CauHoi";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

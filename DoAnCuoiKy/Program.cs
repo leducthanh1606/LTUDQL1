@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DoAnCuoiKy;
+
 namespace DoAnCuoiKy
 {
     static class Program
@@ -16,7 +16,7 @@ namespace DoAnCuoiKy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DoAnCuoiKy.DangNhap());
+            Application.Run(new ViewHSThongTin());
         }
     }
 }
