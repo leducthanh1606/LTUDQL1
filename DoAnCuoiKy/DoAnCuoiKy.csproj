@@ -152,6 +152,12 @@
     <EmbeddedResource Include="ViewHocSinh.resx">
       <DependentUpon>ViewHocSinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewHSDongGop.resx">
+      <DependentUpon>ViewHSDongGop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHSLamBai.resx">
+      <DependentUpon>ViewHSLamBai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewHSThongTin.resx">
       <DependentUpon>ViewHSThongTin.cs</DependentUpon>
     </EmbeddedResource>

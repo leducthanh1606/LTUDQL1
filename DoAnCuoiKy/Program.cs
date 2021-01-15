@@ -16,7 +16,7 @@ namespace DoAnCuoiKy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ViewHSThongTin());
+            Application.Run(new Form1());
         }
     }
 }
