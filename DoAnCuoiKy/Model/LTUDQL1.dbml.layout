@@ -2,46 +2,40 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LTUDQL1">
   <DataContextMoniker Name="/LTUDQL1DataContext" />
   <nestedChildShapes>
-    <classShape Id="71e793b5-6fca-49ca-948f-d752c511cfdf" absoluteBounds="3.75, 0.75, 2, 1.7708968098958331">
-      <DataClassMoniker Name="/LTUDQL1DataContext/KyThi" />
-      <nestedChildShapes>
-        <elementListCompartment Id="c5224255-56cc-40e0-a194-e2c047c3f2ff" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="9128ad88-3377-4f77-9168-b9852439b19c" absoluteBounds="3.75, 3.75, 2, 1.193992513020834">
+    <classShape Id="859f8c59-2aa3-4951-b779-61b8ceea3dcc" absoluteBounds="2.125, 0.5, 2, 1.1939925130208335">
       <DataClassMoniker Name="/LTUDQL1DataContext/BoDe" />
       <nestedChildShapes>
-        <elementListCompartment Id="5847eb16-f826-436b-b629-a4da218e16b6" absoluteBounds="3.765, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="09172eda-216e-4919-a662-f38ec1957b04" absoluteBounds="2.14, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="7d5dde7e-e0b3-408d-a1b2-775e7e38f7c9" absoluteBounds="0.75, 5.75, 2, 2.5401025390625005">
+    <classShape Id="0ac00ae0-3e56-44f4-b375-d3296f9eb5f6" absoluteBounds="2.125, 2.5, 2, 2.5401025390625005">
       <DataClassMoniker Name="/LTUDQL1DataContext/CauHoi" />
       <nestedChildShapes>
-        <elementListCompartment Id="9a88b233-23f9-4458-a880-bdbbf0a89f3e" absoluteBounds="0.765, 6.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="61ae3fd0-3fad-4ceb-ac63-88215f411f29" absoluteBounds="2.14, 2.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="df746bcd-b0f0-4a02-90db-917903a501ab" absoluteBounds="3.75, 5.75, 2, 1.3862939453125005">
-      <DataClassMoniker Name="/LTUDQL1DataContext/CauHoiTrongBoDe" />
-      <nestedChildShapes>
-        <elementListCompartment Id="4ac5adcc-797f-45df-8a7f-579b5c4f04da" absoluteBounds="3.765, 6.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="a2f1687a-3295-49c7-815d-e5f17a4230ae" absoluteBounds="6.75, 0.75, 2, 1.5785953776041666">
+    <classShape Id="cfd73607-80a2-48fb-ad6f-629866148e30" absoluteBounds="5.125, 0.5, 2, 1.5785953776041666">
       <DataClassMoniker Name="/LTUDQL1DataContext/DeThi" />
       <nestedChildShapes>
-        <elementListCompartment Id="afc36074-18bc-4dc7-b404-7c91293bc519" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e19372eb-3b70-4a98-973d-5ec64b4fc877" absoluteBounds="5.1400000000000006, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="cc7b7855-3f2e-4006-9384-de929926723f" absoluteBounds="6.75, 3.75, 2, 1.3862939453125005">
+    <classShape Id="d15212c9-6a21-4133-a7b2-66971420b6fd" absoluteBounds="5.125, 3.5, 2, 1.3862939453125005">
       <DataClassMoniker Name="/LTUDQL1DataContext/KetQua" />
       <nestedChildShapes>
-        <elementListCompartment Id="b2901a51-3b5c-4bc8-9a48-d7dea0d09e66" absoluteBounds="6.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="52092386-caef-4263-8095-72b4f7343709" absoluteBounds="5.1400000000000006, 3.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="6572c164-127f-4c40-ba08-0c848d32f2b3" absoluteBounds="0.75, 1.75, 2, 2.5401025390625">
+    <classShape Id="078e26b7-5532-4e2f-aa9c-7321c372682e" absoluteBounds="8.125, 0.5, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/LTUDQL1DataContext/KyThi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5acf9cb8-9588-4d97-8984-913451f17325" absoluteBounds="8.14, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="068fb6c6-f05e-424b-8aa2-4ae4e1ce1ce1" absoluteBounds="7.875, 3.375, 2, 2.5401025390624996">
       <DataClassMoniker Name="/LTUDQL1DataContext/USER" />
       <nestedChildShapes>
-        <elementListCompartment Id="ca525dd6-21ea-4b8a-a506-4f1a26e990f1" absoluteBounds="0.765, 2.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="f8cc4893-205d-4521-a577-411221d1446a" absoluteBounds="7.8900000000000006, 3.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
