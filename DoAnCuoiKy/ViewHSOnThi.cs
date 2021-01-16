@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace DoAnCuoiKy
 {
-    public partial class Form2 : Form
+    public partial class ViewHSOnThi : Form
     {
-        public Form2()
+        public ViewHSOnThi()
         {
             InitializeComponent();
         }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            ViewHSLamBai lambai = new ViewHSLamBai();
+            lambai.Show();
+        }
+
+      
     }
 }

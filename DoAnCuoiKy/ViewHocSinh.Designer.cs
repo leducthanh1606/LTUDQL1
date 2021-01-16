@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.KetQuaRPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.KetQuaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -43,7 +42,7 @@
             this.txtChonKy = new System.Windows.Forms.TextBox();
             this.rpv_HocSinh = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btn_LoadReport = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.KetQuaRPBindingSource)).BeginInit();
+            this.KetQuaRPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.KetQuaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -52,11 +51,8 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HocVien)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.KetQuaRPBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // KetQuaRPBindingSource
-            // 
-            this.KetQuaRPBindingSource.DataSource = typeof(DoAnCuoiKy.Model.KetQuaRP);
             // 
             // KetQuaBindingSource
             // 
@@ -183,7 +179,7 @@
             this.rpv_HocSinh.Location = new System.Drawing.Point(3, 23);
             this.rpv_HocSinh.Name = "rpv_HocSinh";
             this.rpv_HocSinh.ServerReport.BearerToken = null;
-            this.rpv_HocSinh.Size = new System.Drawing.Size(1010, 260);
+            this.rpv_HocSinh.Size = new System.Drawing.Size(1010, 270);
             this.rpv_HocSinh.TabIndex = 2;
             this.rpv_HocSinh.Load += new System.EventHandler(this.rpv_HocSinh_Load);
             // 
@@ -197,6 +193,10 @@
             this.btn_LoadReport.UseVisualStyleBackColor = true;
             this.btn_LoadReport.Click += new System.EventHandler(this.btn_LoadReport_Click);
             // 
+            // KetQuaRPBindingSource
+            // 
+            this.KetQuaRPBindingSource.DataSource = typeof(DoAnCuoiKy.Model.KetQuaRP);
+            // 
             // ViewHocSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -207,7 +207,6 @@
             this.Name = "ViewHocSinh";
             this.Text = "HocSinh";
             this.Load += new System.EventHandler(this.ViewHocSinh_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.KetQuaRPBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.KetQuaBindingSource)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -217,6 +216,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HocVien)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.KetQuaRPBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace DoAnCuoiKy
+{
+    public partial class ViewHSThi : Form
+    {
+        public ViewHSThi()
+        {
+            InitializeComponent();
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            ViewHSLamBai lambai = new ViewHSLamBai();
+            lambai.Show();
+        }
+
+    }
+}

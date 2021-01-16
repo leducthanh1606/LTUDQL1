@@ -1,6 +1,6 @@
 ﻿namespace DoAnCuoiKy
 {
-    partial class Form1
+    partial class ViewGiaoVien
     {
         /// <summary>
         /// Required designer variable.
@@ -156,6 +156,7 @@
             this.Controls.Add(this.btn_qlchoi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phân Hệ Giáo Viên";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
