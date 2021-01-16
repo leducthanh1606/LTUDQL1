@@ -16,10 +16,5 @@ namespace DoAnCuoiKy
         {
             InitializeComponent();
         }
-
-        private void btnLamBai_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -30,6 +30,10 @@ namespace DoAnCuoiKy
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.datengaysinh = new System.Windows.Forms.TextBox();
+            this.cbbPhanQuyen = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtxacnhanmatkhau = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtmatkhau = new System.Windows.Forms.TextBox();
@@ -38,7 +42,6 @@ namespace DoAnCuoiKy
             this.label7 = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.datengaysinh = new System.Windows.Forms.DateTimePicker();
             this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,6 +61,10 @@ namespace DoAnCuoiKy
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.datengaysinh);
+            this.groupBox1.Controls.Add(this.cbbPhanQuyen);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtxacnhanmatkhau);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtmatkhau);
@@ -66,7 +73,6 @@ namespace DoAnCuoiKy
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtPhone);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.datengaysinh);
             this.groupBox1.Controls.Add(this.cbbGioiTinh);
             this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.label5);
@@ -76,24 +82,72 @@ namespace DoAnCuoiKy
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtHoTen);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.groupBox1.Location = new System.Drawing.Point(13, 73);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(367, 386);
+            this.groupBox1.Size = new System.Drawing.Size(367, 483);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Tag = "";
             this.groupBox1.Text = "Thông tin đăng ký";
             this.groupBox1.UseWaitCursor = true;
             // 
+            // datengaysinh
+            // 
+            this.datengaysinh.Location = new System.Drawing.Point(120, 129);
+            this.datengaysinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.datengaysinh.Name = "datengaysinh";
+            this.datengaysinh.Size = new System.Drawing.Size(199, 27);
+            this.datengaysinh.TabIndex = 24;
+            this.datengaysinh.UseWaitCursor = true;
+            this.datengaysinh.Validating += new System.ComponentModel.CancelEventHandler(this.datengaysinh_Validating);
+            // 
+            // cbbPhanQuyen
+            // 
+            this.cbbPhanQuyen.FormattingEnabled = true;
+            this.cbbPhanQuyen.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2"});
+            this.cbbPhanQuyen.Location = new System.Drawing.Point(146, 369);
+            this.cbbPhanQuyen.Name = "cbbPhanQuyen";
+            this.cbbPhanQuyen.Size = new System.Drawing.Size(56, 28);
+            this.cbbPhanQuyen.TabIndex = 23;
+            this.cbbPhanQuyen.UseWaitCursor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(23, 419);
+            this.label12.Margin = new System.Windows.Forms.Padding(0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(314, 20);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "Admin: 0--Học Sinh: 1--Giáo Viên: 2";
+            this.label12.UseWaitCursor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label11.Location = new System.Drawing.Point(6, 372);
+            this.label11.Margin = new System.Windows.Forms.Padding(0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(126, 20);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Loại Người Dùng:";
+            this.label11.UseWaitCursor = true;
+            // 
             // txtxacnhanmatkhau
             // 
             this.txtxacnhanmatkhau.Location = new System.Drawing.Point(146, 330);
             this.txtxacnhanmatkhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtxacnhanmatkhau.Name = "txtxacnhanmatkhau";
-            this.txtxacnhanmatkhau.Size = new System.Drawing.Size(199, 27);
+            this.txtxacnhanmatkhau.Size = new System.Drawing.Size(173, 27);
             this.txtxacnhanmatkhau.TabIndex = 19;
             this.txtxacnhanmatkhau.UseSystemPasswordChar = true;
             this.txtxacnhanmatkhau.UseWaitCursor = true;
@@ -119,6 +173,7 @@ namespace DoAnCuoiKy
             this.txtmatkhau.TabIndex = 17;
             this.txtmatkhau.UseSystemPasswordChar = true;
             this.txtmatkhau.UseWaitCursor = true;
+            this.txtmatkhau.Validating += new System.ComponentModel.CancelEventHandler(this.txtmatkhau_Validating);
             // 
             // label8
             // 
@@ -140,6 +195,7 @@ namespace DoAnCuoiKy
             this.txttendangnhap.Size = new System.Drawing.Size(199, 27);
             this.txttendangnhap.TabIndex = 15;
             this.txttendangnhap.UseWaitCursor = true;
+            this.txttendangnhap.Validating += new System.ComponentModel.CancelEventHandler(this.txttendangnhap_Validating);
             // 
             // label7
             // 
@@ -174,15 +230,6 @@ namespace DoAnCuoiKy
             this.label6.Text = "Phone:";
             this.label6.UseWaitCursor = true;
             // 
-            // datengaysinh
-            // 
-            this.datengaysinh.Location = new System.Drawing.Point(120, 132);
-            this.datengaysinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.datengaysinh.Name = "datengaysinh";
-            this.datengaysinh.Size = new System.Drawing.Size(225, 27);
-            this.datengaysinh.TabIndex = 11;
-            this.datengaysinh.UseWaitCursor = true;
-            // 
             // cbbGioiTinh
             // 
             this.cbbGioiTinh.BackColor = System.Drawing.SystemColors.MenuBar;
@@ -205,6 +252,7 @@ namespace DoAnCuoiKy
             this.txtEmail.Size = new System.Drawing.Size(199, 27);
             this.txtEmail.TabIndex = 9;
             this.txtEmail.UseWaitCursor = true;
+            this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating);
             // 
             // label5
             // 
@@ -271,6 +319,7 @@ namespace DoAnCuoiKy
             this.txtHoTen.Size = new System.Drawing.Size(199, 27);
             this.txtHoTen.TabIndex = 1;
             this.txtHoTen.UseWaitCursor = true;
+            this.txtHoTen.Validating += new System.ComponentModel.CancelEventHandler(this.txtHoTen_Validating);
             // 
             // label1
             // 
@@ -289,7 +338,7 @@ namespace DoAnCuoiKy
             this.BtnDangKy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.BtnDangKy.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDangKy.ForeColor = System.Drawing.Color.White;
-            this.BtnDangKy.Location = new System.Drawing.Point(84, 464);
+            this.BtnDangKy.Location = new System.Drawing.Point(58, 561);
             this.BtnDangKy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnDangKy.Name = "BtnDangKy";
             this.BtnDangKy.Size = new System.Drawing.Size(107, 42);
@@ -313,7 +362,7 @@ namespace DoAnCuoiKy
             this.Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.Exit.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit.ForeColor = System.Drawing.Color.White;
-            this.Exit.Location = new System.Drawing.Point(197, 464);
+            this.Exit.Location = new System.Drawing.Point(199, 561);
             this.Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(107, 42);
@@ -338,7 +387,7 @@ namespace DoAnCuoiKy
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(403, 511);
+            this.ClientSize = new System.Drawing.Size(401, 614);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Exit);
@@ -367,7 +416,6 @@ namespace DoAnCuoiKy
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker datengaysinh;
         private System.Windows.Forms.ComboBox cbbGioiTinh;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label5;
@@ -381,6 +429,10 @@ namespace DoAnCuoiKy
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cbbPhanQuyen;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox datengaysinh;
     }
 }
 

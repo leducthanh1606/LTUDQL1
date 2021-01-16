@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -54,6 +60,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,14 +72,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKy.Designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\HSThongTinRp.cs" />
     <Compile Include="Model\KetQuaRP.cs" />
+    <Compile Include="Model\LTUDQL1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LTUDQL1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAdmin.Designer.cs">
+      <DependentUpon>ViewAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewADNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewADNguoiDung.Designer.cs">
+      <DependentUpon>ViewADNguoiDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewCauHoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,34 +132,11 @@
     <Compile Include="ViewHocSinh.Designer.cs">
       <DependentUpon>ViewHocSinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewHSDongGop.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewHSDongGop.Designer.cs">
-      <DependentUpon>ViewHSDongGop.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewHSLamBai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewHSLamBai.Designer.cs">
-      <DependentUpon>ViewHSLamBai.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewHSThongTin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewHSThongTin.Designer.cs">
-      <DependentUpon>ViewHSThongTin.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewKyThi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewKyThi.Designer.cs">
       <DependentUpon>ViewKyThi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Model\LTUDQL1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LTUDQL1.dbml</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -136,10 +148,18 @@
     <Compile Include="ViewThiThu.Designer.cs">
       <DependentUpon>ViewThiThu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\HSThongTinRP.rdlc" />
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAdmin.resx">
+      <DependentUpon>ViewAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewADNguoiDung.resx">
+      <DependentUpon>ViewADNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewCauHoi.resx">
       <DependentUpon>ViewCauHoi.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,15 +171,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewHocSinh.resx">
       <DependentUpon>ViewHocSinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewHSDongGop.resx">
-      <DependentUpon>ViewHSDongGop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewHSLamBai.resx">
-      <DependentUpon>ViewHSLamBai.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewHSThongTin.resx">
-      <DependentUpon>ViewHSThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewKyThi.resx">
       <DependentUpon>ViewKyThi.cs</DependentUpon>
@@ -174,6 +185,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ViewThiThu.resx">
       <DependentUpon>ViewThiThu.cs</DependentUpon>
@@ -187,7 +199,6 @@
       <DependentUpon>LTUDQL1.dbml</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\DoAnCuoiKy.Model.HSThongTinRp.datasource" />
     <None Include="Properties\DataSources\DoAnCuoiKy.Model.KetQua.datasource" />
     <None Include="Properties\DataSources\DoAnCuoiKy.Model.KetQuaRP.datasource" />
     <None Include="Properties\DataSources\DoAnCuoiKy.Model.KyThi.datasource" />
@@ -207,6 +218,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\user-login-icon-24.png" />
+    <None Include="Resources\269-2697881_computer-icons-user-clip-art-transparent-png-icon.png" />
+    <None Include="Resources\4979f424070de1dbf7055d91695b74c3-security-lock-flat-icon-by-vexels.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -224,5 +238,6 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
