@@ -56,6 +56,7 @@ namespace DoAnCuoiKy
             this.label1.Size = new System.Drawing.Size(141, 45);
             this.label1.TabIndex = 1;
             this.label1.Text = "LOG IN";
+            this.label1.UseWaitCursor = true;
             // 
             // panel1
             // 
@@ -65,6 +66,7 @@ namespace DoAnCuoiKy
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(236, 1);
             this.panel1.TabIndex = 3;
+            this.panel1.UseWaitCursor = true;
             // 
             // panel2
             // 
@@ -89,6 +91,7 @@ namespace DoAnCuoiKy
             this.Btndangnhap.TabIndex = 4;
             this.Btndangnhap.Text = "LOG IN";
             this.Btndangnhap.UseVisualStyleBackColor = false;
+            this.Btndangnhap.UseWaitCursor = true;
             this.Btndangnhap.Click += new System.EventHandler(this.Btndangnhap_Click);
             // 
             // Clear
@@ -101,6 +104,7 @@ namespace DoAnCuoiKy
             this.Clear.Size = new System.Drawing.Size(54, 20);
             this.Clear.TabIndex = 3;
             this.Clear.Text = "Clear";
+            this.Clear.UseWaitCursor = true;
             this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // Exit
@@ -113,6 +117,7 @@ namespace DoAnCuoiKy
             this.Exit.Size = new System.Drawing.Size(41, 20);
             this.Exit.TabIndex = 6;
             this.Exit.Text = "Exit";
+            this.Exit.UseWaitCursor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // txtUsername
@@ -126,6 +131,7 @@ namespace DoAnCuoiKy
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(181, 25);
             this.txtUsername.TabIndex = 1;
+            this.txtUsername.UseWaitCursor = true;
             // 
             // txtPassword
             // 
@@ -138,6 +144,7 @@ namespace DoAnCuoiKy
             this.txtPassword.Size = new System.Drawing.Size(181, 21);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.UseWaitCursor = true;
             // 
             // dangky
             // 
@@ -149,6 +156,7 @@ namespace DoAnCuoiKy
             this.dangky.Size = new System.Drawing.Size(206, 20);
             this.dangky.TabIndex = 5;
             this.dangky.Text = "Bạn chưa có tài khoản?";
+            this.dangky.UseWaitCursor = true;
             this.dangky.Click += new System.EventHandler(this.dangky_Click);
             // 
             // pictureBox3
@@ -161,6 +169,7 @@ namespace DoAnCuoiKy
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.UseWaitCursor = true;
             // 
             // pictureBox2
             // 
@@ -172,6 +181,7 @@ namespace DoAnCuoiKy
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.UseWaitCursor = true;
             // 
             // pictureBox1
             // 
@@ -183,6 +193,7 @@ namespace DoAnCuoiKy
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.UseWaitCursor = true;
             // 
             // DangNhap
             // 

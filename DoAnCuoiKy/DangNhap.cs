@@ -25,10 +25,25 @@ namespace DoAnCuoiKy
 
             using (var db = new LTUDQL1DataContext())
             {
-                if (db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau) != null)
+                if (db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 0)  != null)
                 {
-                    MessageBox.Show("LOGIN");
+                    MessageBox.Show("LOGIN ADMIN");
+                    ViewAdmin f = new ViewAdmin();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                else if (db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 2) != null)
+                {
+                    MessageBox.Show("LOGIN GIÁO VIÊN");
                     Form1 f = new Form1();
+                    this.Hide();
+                    f.ShowDialog();
+                }
+                else if (db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 1) != null)
+                {
+                    MessageBox.Show("LOGIN HỌC SINH");
+                    Form2 f = new Form2();
                     this.Hide();
                     f.ShowDialog();
                     this.Show();

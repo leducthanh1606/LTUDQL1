@@ -149,3 +149,5 @@ C:\Users\nam08\OneDrive\Máy tính\LTUDQL1\DoAnCuoiKy\bin\Debug\ru\Microsoft.Rep
 C:\Users\nam08\OneDrive\Máy tính\LTUDQL1\DoAnCuoiKy\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\nam08\OneDrive\Máy tính\LTUDQL1\DoAnCuoiKy\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\nam08\OneDrive\Máy tính\LTUDQL1\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.csproj.CopyComplete
+C:\Users\nam08\OneDrive\Máy tính\LTUDQL1\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.ViewADNguoiDung.resources
+C:\Users\nam08\OneDrive\Máy tính\LTUDQL1\DoAnCuoiKy\obj\Debug\DoAnCuoiKy.ViewAdmin.resources

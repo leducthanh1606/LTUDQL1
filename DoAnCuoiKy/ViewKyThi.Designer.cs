@@ -144,6 +144,8 @@
             // 
             this.groupBox1.Controls.Add(this.dgv_KyThi);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(647, 466);
@@ -158,13 +160,13 @@
             this.dgv_KyThi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_KyThi.ColumnHeadersHeight = 29;
             this.dgv_KyThi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_KyThi.Location = new System.Drawing.Point(3, 18);
+            this.dgv_KyThi.Location = new System.Drawing.Point(3, 23);
             this.dgv_KyThi.Name = "dgv_KyThi";
             this.dgv_KyThi.ReadOnly = true;
             this.dgv_KyThi.RowHeadersWidth = 51;
             this.dgv_KyThi.RowTemplate.Height = 24;
             this.dgv_KyThi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_KyThi.Size = new System.Drawing.Size(641, 445);
+            this.dgv_KyThi.Size = new System.Drawing.Size(641, 440);
             this.dgv_KyThi.TabIndex = 60;
             this.dgv_KyThi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_KyThi_CellClick);
             // 
@@ -185,6 +187,8 @@
             this.groupBox2.Controls.Add(this.txtmakt);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(677, 466);
@@ -196,7 +200,7 @@
             // 
             this.txttg.Location = new System.Drawing.Point(170, 228);
             this.txttg.Name = "txttg";
-            this.txttg.Size = new System.Drawing.Size(232, 22);
+            this.txttg.Size = new System.Drawing.Size(232, 27);
             this.txttg.TabIndex = 71;
             // 
             // label5
@@ -205,54 +209,60 @@
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label5.Location = new System.Drawing.Point(66, 231);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 17);
+            this.label5.Size = new System.Drawing.Size(90, 20);
             this.label5.TabIndex = 70;
             this.label5.Text = "Thời Gian";
             // 
             // btn_SuaKT
             // 
+            this.btn_SuaKT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.btn_SuaKT.ForeColor = System.Drawing.Color.White;
             this.btn_SuaKT.Location = new System.Drawing.Point(344, 370);
             this.btn_SuaKT.Name = "btn_SuaKT";
             this.btn_SuaKT.Size = new System.Drawing.Size(110, 54);
             this.btn_SuaKT.TabIndex = 69;
             this.btn_SuaKT.Text = "Sửa Kỳ Thi";
-            this.btn_SuaKT.UseVisualStyleBackColor = true;
+            this.btn_SuaKT.UseVisualStyleBackColor = false;
             this.btn_SuaKT.Click += new System.EventHandler(this.btn_SuaKT_Click);
             // 
             // btn_XoaKT
             // 
+            this.btn_XoaKT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.btn_XoaKT.ForeColor = System.Drawing.Color.White;
             this.btn_XoaKT.Location = new System.Drawing.Point(204, 370);
             this.btn_XoaKT.Name = "btn_XoaKT";
             this.btn_XoaKT.Size = new System.Drawing.Size(110, 54);
             this.btn_XoaKT.TabIndex = 68;
             this.btn_XoaKT.Text = "Xóa Kỳ Thi";
-            this.btn_XoaKT.UseVisualStyleBackColor = true;
+            this.btn_XoaKT.UseVisualStyleBackColor = false;
             this.btn_XoaKT.Click += new System.EventHandler(this.btn_XoaKT_Click);
             // 
             // btn_TaoKyThi
             // 
+            this.btn_TaoKyThi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.btn_TaoKyThi.ForeColor = System.Drawing.Color.White;
             this.btn_TaoKyThi.Location = new System.Drawing.Point(65, 370);
             this.btn_TaoKyThi.Name = "btn_TaoKyThi";
             this.btn_TaoKyThi.Size = new System.Drawing.Size(110, 54);
             this.btn_TaoKyThi.TabIndex = 67;
             this.btn_TaoKyThi.Text = "Tạo Kỳ Thi";
-            this.btn_TaoKyThi.UseVisualStyleBackColor = true;
+            this.btn_TaoKyThi.UseVisualStyleBackColor = false;
             this.btn_TaoKyThi.Click += new System.EventHandler(this.btn_TaoKyThi_Click);
             // 
             // txtmahv
             // 
             this.txtmahv.Location = new System.Drawing.Point(170, 288);
             this.txtmahv.Name = "txtmahv";
-            this.txtmahv.Size = new System.Drawing.Size(232, 22);
+            this.txtmahv.Size = new System.Drawing.Size(232, 27);
             this.txtmahv.TabIndex = 66;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(66, 291);
+            this.label4.Location = new System.Drawing.Point(44, 288);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 17);
+            this.label4.Size = new System.Drawing.Size(117, 20);
             this.label4.TabIndex = 65;
             this.label4.Text = "Mã Học Viên";
             // 
@@ -260,7 +270,7 @@
             // 
             this.txtmadt.Location = new System.Drawing.Point(170, 165);
             this.txtmadt.Name = "txtmadt";
-            this.txtmadt.Size = new System.Drawing.Size(232, 22);
+            this.txtmadt.Size = new System.Drawing.Size(232, 27);
             this.txtmadt.TabIndex = 64;
             // 
             // label3
@@ -269,7 +279,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(66, 168);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 17);
+            this.label3.Size = new System.Drawing.Size(95, 20);
             this.label3.TabIndex = 63;
             this.label3.Text = "Mã Đề Thi";
             // 
@@ -277,7 +287,7 @@
             // 
             this.txtmant.Location = new System.Drawing.Point(170, 99);
             this.txtmant.Name = "txtmant";
-            this.txtmant.Size = new System.Drawing.Size(232, 22);
+            this.txtmant.Size = new System.Drawing.Size(232, 27);
             this.txtmant.TabIndex = 62;
             // 
             // label2
@@ -286,7 +296,7 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(66, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 17);
+            this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 61;
             this.label2.Text = "Ngày Thi";
             // 
@@ -294,7 +304,7 @@
             // 
             this.txtmakt.Location = new System.Drawing.Point(170, 37);
             this.txtmakt.Name = "txtmakt";
-            this.txtmakt.Size = new System.Drawing.Size(232, 22);
+            this.txtmakt.Size = new System.Drawing.Size(232, 27);
             this.txtmakt.TabIndex = 60;
             // 
             // label1
@@ -303,7 +313,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(66, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 17);
+            this.label1.Size = new System.Drawing.Size(93, 20);
             this.label1.TabIndex = 59;
             this.label1.Text = "Mã Kỳ Thi";
             // 
@@ -314,6 +324,8 @@
             this.groupBox3.Controls.Add(this.txtChonKy);
             this.groupBox3.Controls.Add(this.btn_LoadReport);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1328, 399);
@@ -328,7 +340,7 @@
             reportDataSource1.Value = this.ThiSinhRPBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "DoAnCuoiKy.Report.PrintThiSinhTheoKyThi.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(3, 18);
+            this.reportViewer1.Location = new System.Drawing.Point(3, 23);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(1322, 295);
@@ -340,7 +352,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(420, 332);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 17);
+            this.label6.Size = new System.Drawing.Size(111, 20);
             this.label6.TabIndex = 7;
             this.label6.Text = "Chọn Kỳ Thi";
             // 
@@ -348,7 +360,7 @@
             // 
             this.txtChonKy.Location = new System.Drawing.Point(508, 354);
             this.txtChonKy.Name = "txtChonKy";
-            this.txtChonKy.Size = new System.Drawing.Size(136, 22);
+            this.txtChonKy.Size = new System.Drawing.Size(136, 27);
             this.txtChonKy.TabIndex = 6;
             this.txtChonKy.Text = "KT01";
             // 
@@ -375,7 +387,9 @@
             this.Controls.Add(this.btn_sua);
             this.Controls.Add(this.btn_xoa);
             this.Controls.Add(this.btn_them);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "ViewKyThi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KyThi";
             this.Load += new System.EventHandler(this.ViewKyThi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.KetQuaBindingSource)).EndInit();

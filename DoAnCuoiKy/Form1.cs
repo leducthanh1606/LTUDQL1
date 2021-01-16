@@ -46,5 +46,10 @@ namespace DoAnCuoiKy
             ViewThiThu thithu = new ViewThiThu();
             thithu.Show();
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

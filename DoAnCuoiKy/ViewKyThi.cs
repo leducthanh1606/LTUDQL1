@@ -132,15 +132,15 @@ namespace DoAnCuoiKy
                 bsCR.DataSource = from kq in db.KetQuas
                                   join kt in db.KyThis on new { kq.MaKT, kq.MaHV }
                                   equals new { kt.MaKT, kt.MaHV }
-                                  join sv in db.HocViens on kt.MaHV equals sv.MaHV
+                                  join sv in db.USERs on kt.MaHV equals sv.f_MaSo
                                   where kt.MaKT == ky
                                   select new ThiSinhRP
                                   {
                                       MaKyThi = kt.MaKT,
-                                      MaHocVien = sv.MaHV,
-                                      TenHocVien = sv.HoTen,
-                                      NgaySinh = sv.NgaySinh,
-                                      GioiTinh = sv.GioiTinh,
+                                      MaHocVien = sv.f_MaSo,
+                                      TenHocVien = sv.f_HoTen,
+                                      NgaySinh = sv.f_NgaySinh,
+                                      GioiTinh = sv.f_GioiTinh,
                                       Diem = kq.Diem
                                   };
             }
@@ -156,10 +156,10 @@ namespace DoAnCuoiKy
                 bsCR.DataSource = from kq in db.KetQuas
                                   join kt in db.KyThis on new { kq.MaKT, kq.MaHV }
                                   equals new { kt.MaKT, kt.MaHV }
-                                  join sv in db.HocViens on kt.MaHV equals sv.MaHV
-                                  select new ThiSinhRP {MaKyThi = kt.MaKT, MaHocVien = sv.MaHV,
-                                                        TenHocVien = sv.HoTen, NgaySinh = sv.NgaySinh,
-                                                        GioiTinh = sv.GioiTinh, Diem = kq.Diem};
+                                  join sv in db.USERs on kt.MaHV equals sv.f_MaSo
+                                  select new ThiSinhRP {MaKyThi = kt.MaKT, MaHocVien = sv.f_MaSo,
+                                                        TenHocVien = sv.f_HoTen, NgaySinh = sv.f_NgaySinh,
+                                                        GioiTinh = sv.f_GioiTinh, Diem = kq.Diem};
             }
             rdsCR.Value = bsCR;
             rdsCR.Name = "RPTheoKy";
