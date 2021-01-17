@@ -13,6 +13,7 @@ namespace DoAnCuoiKy
 {
     public partial class ViewHSLamBai : Form
     {
+<<<<<<< HEAD
         string[] KetQua = new string[10];
         LTUDQL1DataContext LamBai = new LTUDQL1DataContext();
         List<CauHoi> ch = new List<CauHoi>();
@@ -47,10 +48,41 @@ namespace DoAnCuoiKy
             rbC.Text = ch[stt].DapAnC.ToString();
             rbD.Text = ch[stt].DapAnD.ToString();
             
+=======
+        LTUDQL1DataContext LamBai = new LTUDQL1DataContext();
+        List<CauHoi> ch = new List<CauHoi>();
+        int stt = 0;
+        public ViewHSLamBai()
+        {
+            //ch.Add((from kt in LamBai.KyThis
+            //         join dt in LamBai.DeThis on kt.MaDT equals dt.MaDT
+            //         join choi in LamBai.CauHois on dt.MaCH equals choi.MaCH
+            //         select new { choi }).Single());
+
+            InitializeComponent();
+
+            //CauHoi a = new CauHoi();
+            //IQueryable < CauHoi > b = (from kt in LamBai.KyThis
+            //    join dt in LamBai.DeThis on kt.MaDT equals dt.MaDT
+            //    join choi in LamBai.CauHois on dt.MaDT equals choi.MaCH
+            //    select new CauHoi { CapHoc = choi.CapHoc, MonHoc = choi.MonHoc, MaCH = choi.MaCH, NoiDung = choi.NoiDung, DapAnA = choi.DapAnA, DapAnB = choi.DapAnB, DapAnC = choi.DapAnC, DapAnD = choi.DapAnD, DapAnDung = choi.DapAnDung });
+
+            //ch.Add(b.Single());
+            ch.Add(LamBai.CauHois.Where(u => u.MaCH == "CH01").Single());
+            ch.Add(LamBai.CauHois.Where(u => u.MaCH == "CH04").Single());
+            ch.Add(LamBai.CauHois.Where(u => u.MaCH == "CH05").Single());
+
+            lbCauHoi.Text = ch[stt].NoiDung.ToString();
+            rbA.Text = ch[stt].DapAnA;
+            rbB.Text = ch[stt].DapAnB;
+            rbC.Text = ch[stt].DapAnC;
+            rbD.Text = ch[stt].DapAnD;
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
                
             if (rbA.Checked == true)
             {
@@ -103,12 +135,24 @@ namespace DoAnCuoiKy
                 rbB.Text = ch[stt].DapAnB.ToString();
                 rbC.Text = ch[stt].DapAnC.ToString();
                 rbD.Text = ch[stt].DapAnD.ToString();
+=======
+            lbCauHoi.Text = "";
+            if (stt >= 0)
+            {
+                stt++;
+                lbCauHoi.Text = ch[stt].NoiDung;
+                rbA.Text = ch[stt].DapAnA;
+                rbB.Text = ch[stt].DapAnB;
+                rbC.Text = ch[stt].DapAnC;
+                rbD.Text = ch[stt].DapAnD;
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             }
 
         }
 
         private void btnPrev_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             
             if (rbA.Checked == true)
             {
@@ -162,11 +206,23 @@ namespace DoAnCuoiKy
                 rbB.Text = ch[stt].DapAnB.ToString();
                 rbC.Text = ch[stt].DapAnC.ToString();
                 rbD.Text = ch[stt].DapAnD.ToString();
+=======
+            lbCauHoi.Text = "";
+            if (stt < ch.Count())
+            {
+                stt--;
+                lbCauHoi.Text = ch[stt].NoiDung;
+                rbA.Text = ch[stt].DapAnA;
+                rbB.Text = ch[stt].DapAnB;
+                rbC.Text = ch[stt].DapAnC;
+                rbD.Text = ch[stt].DapAnD;
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             }
         }
 
         private void btnDone_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             KetThucBaiThi();
         }
 
@@ -266,6 +322,8 @@ namespace DoAnCuoiKy
                 MessageBox.Show("Hết giờ làm bài!!!");
                 
             }
+=======
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
 
         }
     }

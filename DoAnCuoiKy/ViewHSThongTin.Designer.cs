@@ -38,6 +38,11 @@
             this.lb = new System.Windows.Forms.Label();
             this.txtGioiTinh = new System.Windows.Forms.TextBox();
             this.lbGioiTinh = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+=======
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.lbDiaChi = new System.Windows.Forms.Label();
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.txtSdt = new System.Windows.Forms.TextBox();
             this.lbSdt = new System.Windows.Forms.Label();
             this.txtNgaySinh = new System.Windows.Forms.TextBox();
@@ -69,7 +74,11 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
             this.splitContainer1.Size = new System.Drawing.Size(853, 701);
+<<<<<<< HEAD
             this.splitContainer1.SplitterDistance = 436;
+=======
+            this.splitContainer1.SplitterDistance = 483;
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.splitContainer1.TabIndex = 31;
             // 
             // panel1
@@ -82,6 +91,11 @@
             this.panel1.Controls.Add(this.lb);
             this.panel1.Controls.Add(this.txtGioiTinh);
             this.panel1.Controls.Add(this.lbGioiTinh);
+<<<<<<< HEAD
+=======
+            this.panel1.Controls.Add(this.txtDiaChi);
+            this.panel1.Controls.Add(this.lbDiaChi);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.panel1.Controls.Add(this.txtSdt);
             this.panel1.Controls.Add(this.lbSdt);
             this.panel1.Controls.Add(this.txtNgaySinh);
@@ -92,7 +106,11 @@
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
+<<<<<<< HEAD
             this.panel1.Size = new System.Drawing.Size(853, 436);
+=======
+            this.panel1.Size = new System.Drawing.Size(853, 483);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.panel1.TabIndex = 0;
             // 
             // btnUpdate
@@ -100,7 +118,11 @@
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnUpdate.Location = new System.Drawing.Point(154, 374);
+=======
+            this.btnUpdate.Location = new System.Drawing.Point(154, 425);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(494, 35);
             this.btnUpdate.TabIndex = 30;
@@ -120,7 +142,11 @@
             // 
             // txtEmail
             // 
+<<<<<<< HEAD
             this.txtEmail.Location = new System.Drawing.Point(268, 328);
+=======
+            this.txtEmail.Location = new System.Drawing.Point(268, 379);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(380, 27);
             this.txtEmail.TabIndex = 28;
@@ -130,7 +156,11 @@
             this.lbEmail.AutoSize = true;
             this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+<<<<<<< HEAD
             this.lbEmail.Location = new System.Drawing.Point(151, 328);
+=======
+            this.lbEmail.Location = new System.Drawing.Point(151, 379);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(52, 17);
             this.lbEmail.TabIndex = 27;
@@ -156,7 +186,11 @@
             // 
             // txtGioiTinh
             // 
+<<<<<<< HEAD
             this.txtGioiTinh.Location = new System.Drawing.Point(268, 274);
+=======
+            this.txtGioiTinh.Location = new System.Drawing.Point(268, 325);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(380, 27);
             this.txtGioiTinh.TabIndex = 24;
@@ -166,12 +200,37 @@
             this.lbGioiTinh.AutoSize = true;
             this.lbGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+<<<<<<< HEAD
             this.lbGioiTinh.Location = new System.Drawing.Point(151, 274);
+=======
+            this.lbGioiTinh.Location = new System.Drawing.Point(151, 325);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.lbGioiTinh.Name = "lbGioiTinh";
             this.lbGioiTinh.Size = new System.Drawing.Size(74, 17);
             this.lbGioiTinh.TabIndex = 23;
             this.lbGioiTinh.Text = "Giới tính:";
             // 
+<<<<<<< HEAD
+=======
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Location = new System.Drawing.Point(268, 272);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(380, 27);
+            this.txtDiaChi.TabIndex = 22;
+            // 
+            // lbDiaChi
+            // 
+            this.lbDiaChi.AutoSize = true;
+            this.lbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.lbDiaChi.Location = new System.Drawing.Point(151, 272);
+            this.lbDiaChi.Name = "lbDiaChi";
+            this.lbDiaChi.Size = new System.Drawing.Size(63, 17);
+            this.lbDiaChi.TabIndex = 21;
+            this.lbDiaChi.Text = "Địa chỉ:";
+            // 
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             // txtSdt
             // 
             this.txtSdt.Location = new System.Drawing.Point(268, 221);
@@ -234,7 +293,11 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
+<<<<<<< HEAD
             this.groupBox1.Size = new System.Drawing.Size(853, 261);
+=======
+            this.groupBox1.Size = new System.Drawing.Size(853, 214);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Báo Cáo";
@@ -246,9 +309,14 @@
             this.reportViewer1.Location = new System.Drawing.Point(3, 23);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
+<<<<<<< HEAD
             this.reportViewer1.Size = new System.Drawing.Size(847, 235);
             this.reportViewer1.TabIndex = 0;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
+=======
+            this.reportViewer1.Size = new System.Drawing.Size(847, 188);
+            this.reportViewer1.TabIndex = 0;
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             // 
             // ViewHSThongTin
             // 
@@ -280,6 +348,13 @@
         private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.TextBox txtMaSo;
         private System.Windows.Forms.Label lb;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.TextBox txtGioiTinh;
+        private System.Windows.Forms.Label lbGioiTinh;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.Label lbDiaChi;
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
         private System.Windows.Forms.TextBox txtSdt;
         private System.Windows.Forms.Label lbSdt;
         private System.Windows.Forms.TextBox txtNgaySinh;
@@ -288,7 +363,10 @@
         private System.Windows.Forms.Label lbHoTen;
         private System.Windows.Forms.GroupBox groupBox1;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox txtGioiTinh;
         private System.Windows.Forms.Label lbGioiTinh;
+=======
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
     }
 }

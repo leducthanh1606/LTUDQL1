@@ -20,6 +20,7 @@ namespace DoAnCuoiKy
         private void btnDongGop_Click(object sender, EventArgs e)
         {
             LTUDQL1DataContext DongGop = new LTUDQL1DataContext();
+<<<<<<< HEAD
             DongGopCauHoi dg = new DongGopCauHoi();
 
             int stt = DongGop.DongGopCauHois.Count();
@@ -49,6 +50,35 @@ namespace DoAnCuoiKy
             DongGop.DongGopCauHois.InsertOnSubmit(dg);
             DongGop.SubmitChanges();
             MessageBox.Show("Thêm Thành Công!!!");
+=======
+            //DongGopCauHoi dg = new DongGopCauHoi();
+
+            //dg.CauHoi = txtCauHoi.Text;
+            //dg.DapAnA = txtDapAnA.Text;
+            //dg.DapAnB = txtDapAnB.Text;
+            //dg.DapAnB = txtDapAnC.Text;
+            //dg.DapAnD = txtDapAnD.Text;
+            //if (rbA.Checked == true)
+            //{
+            //    dg.DapAnDung = "A";
+            //}
+            //else if (rbB.Checked == true)
+            //{
+            //    dg.DapAnDung = "B";
+            //}
+            //else if (rbC.Checked == true)
+            //{
+            //    dg.DapAnDung = "C";
+            //}
+            //else if (rbD.Checked == true)
+            //{
+            //    dg.DapAnDung = "D";
+            //}
+
+            //DongGop.DongGopCauHois.InsertOnSubmit(dg);
+            //DongGop.SubmitChanges();
+            //MessageBox.Show("Thêm Thành Công!!!");
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
         }
 
        

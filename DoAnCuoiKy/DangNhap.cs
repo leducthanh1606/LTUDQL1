@@ -43,7 +43,11 @@ namespace DoAnCuoiKy
                 else if (db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 1) != null)
                 {
                     MessageBox.Show("LOGIN HỌC SINH");
+<<<<<<< HEAD
                     ViewPhanHeHS f = new ViewPhanHeHS((db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 1).f_MaSo).ToString());
+=======
+                    ViewPhanHeHS f = new ViewPhanHeHS();
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
                     this.Hide();
                     f.ShowDialog();
                     this.Show();

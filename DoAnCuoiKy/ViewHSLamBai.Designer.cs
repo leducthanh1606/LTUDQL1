@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             this.components = new System.ComponentModel.Container();
+=======
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.btnDone = new System.Windows.Forms.Button();
             this.gbDapAn = new System.Windows.Forms.GroupBox();
             this.rbB = new System.Windows.Forms.RadioButton();
@@ -40,8 +43,11 @@
             this.lbCauHoi = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.DemNguoc = new System.Windows.Forms.Timer(this.components);
             this.DongHo = new System.Windows.Forms.Label();
+=======
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.gbDapAn.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +57,11 @@
             this.btnDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.btnDone.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnDone.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnDone.Location = new System.Drawing.Point(328, 539);
+=======
+            this.btnDone.Location = new System.Drawing.Point(328, 529);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(181, 38);
             this.btnDone.TabIndex = 23;
@@ -69,7 +79,11 @@
             this.gbDapAn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.gbDapAn.Location = new System.Drawing.Point(44, 231);
             this.gbDapAn.Name = "gbDapAn";
+<<<<<<< HEAD
             this.gbDapAn.Size = new System.Drawing.Size(776, 264);
+=======
+            this.gbDapAn.Size = new System.Drawing.Size(776, 243);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.gbDapAn.TabIndex = 22;
             this.gbDapAn.TabStop = false;
             this.gbDapAn.Text = "Đáp án";
@@ -139,7 +153,11 @@
             // lbCauHoi
             // 
             this.lbCauHoi.AutoSize = true;
+<<<<<<< HEAD
             this.lbCauHoi.Location = new System.Drawing.Point(18, 17);
+=======
+            this.lbCauHoi.Location = new System.Drawing.Point(18, 12);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.lbCauHoi.Name = "lbCauHoi";
             this.lbCauHoi.Size = new System.Drawing.Size(0, 17);
             this.lbCauHoi.TabIndex = 0;
@@ -149,9 +167,15 @@
             this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.btnNext.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnNext.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnNext.Location = new System.Drawing.Point(480, 501);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(214, 32);
+=======
+            this.btnNext.Location = new System.Drawing.Point(480, 480);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(214, 43);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.btnNext.TabIndex = 21;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -162,14 +186,21 @@
             this.btnPrev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.btnPrev.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnPrev.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnPrev.Location = new System.Drawing.Point(152, 501);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(214, 32);
+=======
+            this.btnPrev.Location = new System.Drawing.Point(152, 480);
+            this.btnPrev.Name = "btnPrev";
+            this.btnPrev.Size = new System.Drawing.Size(214, 43);
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.btnPrev.TabIndex = 20;
             this.btnPrev.Text = "Previous";
             this.btnPrev.UseVisualStyleBackColor = false;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
+<<<<<<< HEAD
             // DemNguoc
             // 
             this.DemNguoc.Interval = 1000;
@@ -185,12 +216,17 @@
             this.DongHo.Size = new System.Drawing.Size(0, 32);
             this.DongHo.TabIndex = 24;
             // 
+=======
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             // ViewHSLamBai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 589);
+<<<<<<< HEAD
             this.Controls.Add(this.DongHo);
+=======
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             this.Controls.Add(this.btnDone);
             this.Controls.Add(this.gbDapAn);
             this.Controls.Add(this.panel1);
@@ -204,7 +240,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+<<<<<<< HEAD
             this.PerformLayout();
+=======
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
 
         }
 
@@ -221,7 +260,10 @@
         private System.Windows.Forms.Label lbCauHoi;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
+<<<<<<< HEAD
         private System.Windows.Forms.Timer DemNguoc;
         private System.Windows.Forms.Label DongHo;
+=======
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
     }
 }

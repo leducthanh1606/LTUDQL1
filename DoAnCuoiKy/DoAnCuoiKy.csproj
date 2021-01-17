@@ -84,6 +84,7 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Model\HSThongTinRP.cs" />
     <Compile Include="ViewHSLamBaiOn.cs">
       <SubType>Form</SubType>
@@ -94,6 +95,11 @@
     <Compile Include="ViewPhanHeHS.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+    <Compile Include="ViewPhanHeHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
     <Compile Include="ViewPhanHeHS.Designer.cs">
       <DependentUpon>ViewPhanHeHS.cs</DependentUpon>
     </Compile>
@@ -191,10 +197,13 @@
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Report\HSThongTinRP.rdlc" />
     <EmbeddedResource Include="ViewHSLamBaiOn.resx">
       <DependentUpon>ViewHSLamBaiOn.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
     <EmbeddedResource Include="ViewPhanHeHS.resx">
       <DependentUpon>ViewPhanHeHS.cs</DependentUpon>
     </EmbeddedResource>

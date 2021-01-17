@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using DoAnCuoiKy.Model;
 using System;
+=======
+﻿using System;
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +17,7 @@ namespace DoAnCuoiKy
 {
     public partial class ViewHSOnThi : Form
     {
+<<<<<<< HEAD
         string mhv;
         public ViewHSOnThi(string MaHV)
         {
@@ -36,11 +41,20 @@ namespace DoAnCuoiKy
             }    
 
             cbDT.DataSource = md;
+=======
+        public ViewHSOnThi()
+        {
+            InitializeComponent();
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             ViewHSLamBaiOn lambai = new ViewHSLamBaiOn(cbDT.SelectedItem.ToString(), mhv);
+=======
+            ViewHSLamBai lambai = new ViewHSLamBai();
+>>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
             lambai.Show();
         }
 
