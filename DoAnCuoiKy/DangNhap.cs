@@ -31,7 +31,7 @@ namespace DoAnCuoiKy
                     ViewAdmin f = new ViewAdmin();
                     this.Hide();
                     f.ShowDialog();
-                    this.Show();
+                    
                 }
                 else if (db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 2) != null)
                 {
@@ -46,7 +46,7 @@ namespace DoAnCuoiKy
                     Form2 f = new Form2();
                     this.Hide();
                     f.ShowDialog();
-                    this.Show();
+                    
                 }
 
             }
