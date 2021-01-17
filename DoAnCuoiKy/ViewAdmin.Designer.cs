@@ -33,6 +33,7 @@ namespace DoAnCuoiKy
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Exit = new System.Windows.Forms.Label();
+            this.btnQuanLyHeThong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,11 +86,26 @@ namespace DoAnCuoiKy
             this.Exit.UseWaitCursor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
+            // btnQuanLyHeThong
+            // 
+            this.btnQuanLyHeThong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.btnQuanLyHeThong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuanLyHeThong.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnQuanLyHeThong.ForeColor = System.Drawing.Color.White;
+            this.btnQuanLyHeThong.Location = new System.Drawing.Point(471, 124);
+            this.btnQuanLyHeThong.Name = "btnQuanLyHeThong";
+            this.btnQuanLyHeThong.Size = new System.Drawing.Size(189, 89);
+            this.btnQuanLyHeThong.TabIndex = 10;
+            this.btnQuanLyHeThong.Text = "Quản Lý Hệ Thống";
+            this.btnQuanLyHeThong.UseVisualStyleBackColor = false;
+            this.btnQuanLyHeThong.Click += new System.EventHandler(this.btnQuanLyHeThong_Click);
+            // 
             // ViewAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnQuanLyHeThong);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
@@ -109,5 +125,6 @@ namespace DoAnCuoiKy
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Exit;
+        private System.Windows.Forms.Button btnQuanLyHeThong;
     }
 }

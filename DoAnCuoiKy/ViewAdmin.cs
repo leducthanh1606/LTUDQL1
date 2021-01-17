@@ -29,5 +29,13 @@ namespace DoAnCuoiKy
         {
             Application.Exit();
         }
+
+        private void btnQuanLyHeThong_Click(object sender, EventArgs e)
+        {
+            ViewADHeThong f = new ViewADHeThong();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }

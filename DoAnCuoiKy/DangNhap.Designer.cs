@@ -93,6 +93,7 @@ namespace DoAnCuoiKy
             this.Btndangnhap.UseVisualStyleBackColor = false;
             this.Btndangnhap.UseWaitCursor = true;
             this.Btndangnhap.Click += new System.EventHandler(this.Btndangnhap_Click);
+
             // 
             // Clear
             // 

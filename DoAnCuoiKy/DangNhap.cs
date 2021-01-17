@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using ClosedXML;
 using DoAnCuoiKy;
 using DoAnCuoiKy.Model;
 
@@ -31,26 +32,22 @@ namespace DoAnCuoiKy
                     ViewAdmin f = new ViewAdmin();
                     this.Hide();
                     f.ShowDialog();
-                    this.Show();
+                    
                 }
                 else if (db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 2) != null)
                 {
                     MessageBox.Show("LOGIN GIÁO VIÊN");
-                    ViewGiaoVien f = new ViewGiaoVien();
+                    Form1 f = new Form1();
                     this.Hide();
                     f.ShowDialog();
                 }
                 else if (db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 1) != null)
                 {
                     MessageBox.Show("LOGIN HỌC SINH");
-<<<<<<< HEAD
-                    ViewPhanHeHS f = new ViewPhanHeHS((db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 1).f_MaSo).ToString());
-=======
-                    ViewPhanHeHS f = new ViewPhanHeHS();
->>>>>>> 039aabb594da4f7bf48bbfa2abcdd34f8ed84fcb
+                    Form2 f = new Form2();
                     this.Hide();
                     f.ShowDialog();
-                    this.Show();
+                    
                 }
 
             }
@@ -84,5 +81,7 @@ namespace DoAnCuoiKy
             }
 
         }
+
+       
     }
 }
