@@ -60,6 +60,7 @@
             this.txtMaSo = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtHoTen = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
             this.label22 = new System.Windows.Forms.Label();
             this.fMaSoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,6 +74,16 @@
             this.appData = new DoAnCuoiKy.AppData();
             this.uSERBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uSERTableAdapter = new DoAnCuoiKy.AppDataTableAdapters.USERTableAdapter();
+=======
+            this.label1 = new System.Windows.Forms.Label();
+            this.ThiSinhRPBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtfilename = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnfilename = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cbbsheet = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.KetQuaBindingSource)).BeginInit();
+>>>>>>> origin/feature/test
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -98,9 +109,15 @@
             // 
             // splitContainer1.Panel2
             // 
+<<<<<<< HEAD
             this.splitContainer1.Panel2.Controls.Add(this.groupBox3);
             this.splitContainer1.Size = new System.Drawing.Size(1286, 733);
             this.splitContainer1.SplitterDistance = 689;
+=======
+            this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
+            this.splitContainer1.Size = new System.Drawing.Size(1276, 691);
+            this.splitContainer1.SplitterDistance = 684;
+>>>>>>> origin/feature/test
             this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -114,7 +131,11 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+<<<<<<< HEAD
             this.groupBox1.Size = new System.Drawing.Size(689, 733);
+=======
+            this.groupBox1.Size = new System.Drawing.Size(684, 691);
+>>>>>>> origin/feature/test
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Người Dùng";
@@ -141,6 +162,7 @@
             this.dgv_NguoiDung.RowHeadersWidth = 51;
             this.dgv_NguoiDung.RowTemplate.Height = 24;
             this.dgv_NguoiDung.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+<<<<<<< HEAD
             this.dgv_NguoiDung.Size = new System.Drawing.Size(681, 705);
             this.dgv_NguoiDung.TabIndex = 61;
             this.dgv_NguoiDung.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_NguoiDung_CellClick);
@@ -283,6 +305,70 @@
             this.label14.Size = new System.Drawing.Size(110, 20);
             this.label14.TabIndex = 91;
             this.label14.Text = "Phân Quyền";
+=======
+            this.dgv_NguoiDung.Size = new System.Drawing.Size(676, 663);
+            this.dgv_NguoiDung.TabIndex = 61;
+            this.dgv_NguoiDung.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_NguoiDung_CellClick);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.cbbsheet);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.btnfilename);
+            this.groupBox2.Controls.Add(this.txtfilename);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.txtPhanQuyen);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.txtMatKhau);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.txtTenDangNhap);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.txtPhone);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.txtGioiTinh);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.btnSua);
+            this.groupBox2.Controls.Add(this.btnXoa);
+            this.groupBox2.Controls.Add(this.btnThem);
+            this.groupBox2.Controls.Add(this.txtNgaySinh);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.txtEmail);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.txtMaSo);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.txtHoTen);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(586, 691);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Thông tin người dùng";
+            // 
+            // txtPhanQuyen
+            // 
+            this.txtPhanQuyen.Location = new System.Drawing.Point(228, 497);
+            this.txtPhanQuyen.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhanQuyen.Name = "txtPhanQuyen";
+            this.txtPhanQuyen.Size = new System.Drawing.Size(318, 27);
+            this.txtPhanQuyen.TabIndex = 92;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.Location = new System.Drawing.Point(85, 501);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(110, 20);
+            this.label9.TabIndex = 91;
+            this.label9.Text = "Phân Quyền";
+>>>>>>> origin/feature/test
             // 
             // txtMatKhau
             // 
@@ -547,11 +633,66 @@
             // 
             this.uSERTableAdapter.ClearBeforeFill = true;
             // 
+            // txtfilename
+            // 
+            this.txtfilename.Location = new System.Drawing.Point(165, 620);
+            this.txtfilename.Margin = new System.Windows.Forms.Padding(4);
+            this.txtfilename.Name = "txtfilename";
+            this.txtfilename.ReadOnly = true;
+            this.txtfilename.Size = new System.Drawing.Size(318, 27);
+            this.txtfilename.TabIndex = 94;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label10.Location = new System.Drawing.Point(18, 626);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(94, 20);
+            this.label10.TabIndex = 93;
+            this.label10.Text = "File Name";
+            // 
+            // btnfilename
+            // 
+            this.btnfilename.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.btnfilename.ForeColor = System.Drawing.Color.White;
+            this.btnfilename.Location = new System.Drawing.Point(491, 620);
+            this.btnfilename.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfilename.Name = "btnfilename";
+            this.btnfilename.Size = new System.Drawing.Size(79, 27);
+            this.btnfilename.TabIndex = 95;
+            this.btnfilename.Text = "...";
+            this.btnfilename.UseVisualStyleBackColor = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label11.Location = new System.Drawing.Point(18, 667);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(57, 20);
+            this.label11.TabIndex = 96;
+            this.label11.Text = "Sheet";
+            // 
+            // cbbsheet
+            // 
+            this.cbbsheet.FormattingEnabled = true;
+            this.cbbsheet.Location = new System.Drawing.Point(165, 660);
+            this.cbbsheet.Name = "cbbsheet";
+            this.cbbsheet.Size = new System.Drawing.Size(121, 28);
+            this.cbbsheet.TabIndex = 97;
+            // 
             // ViewADNguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1286, 733);
+=======
+            this.ClientSize = new System.Drawing.Size(1276, 691);
+>>>>>>> origin/feature/test
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
@@ -608,6 +749,7 @@
         private System.Windows.Forms.TextBox txtMaSo;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtHoTen;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.DataGridViewTextBoxColumn fHotenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fMaSoDataGridViewTextBoxColumn;
@@ -622,5 +764,21 @@
         private AppData appData;
         private System.Windows.Forms.BindingSource uSERBindingSource;
         private AppDataTableAdapters.USERTableAdapter uSERTableAdapter;
+=======
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtPhanQuyen;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtTenDangNhap;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbbsheet;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnfilename;
+        private System.Windows.Forms.TextBox txtfilename;
+        private System.Windows.Forms.Label label10;
+>>>>>>> origin/feature/test
     }
 }

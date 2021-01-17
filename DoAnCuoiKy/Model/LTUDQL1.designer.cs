@@ -30,15 +30,18 @@ namespace DoAnCuoiKy.Model
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertKyThi(KyThi instance);
-    partial void UpdateKyThi(KyThi instance);
-    partial void DeleteKyThi(KyThi instance);
+    partial void InsertBoDe(BoDe instance);
+    partial void UpdateBoDe(BoDe instance);
+    partial void DeleteBoDe(BoDe instance);
     partial void InsertCauHoi(CauHoi instance);
     partial void UpdateCauHoi(CauHoi instance);
     partial void DeleteCauHoi(CauHoi instance);
     partial void InsertDeThi(DeThi instance);
     partial void UpdateDeThi(DeThi instance);
     partial void DeleteDeThi(DeThi instance);
+    partial void InsertKyThi(KyThi instance);
+    partial void UpdateKyThi(KyThi instance);
+    partial void DeleteKyThi(KyThi instance);
     partial void InsertUSER(USER instance);
     partial void UpdateUSER(USER instance);
     partial void DeleteUSER(USER instance);
@@ -74,14 +77,6 @@ namespace DoAnCuoiKy.Model
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<KyThi> KyThis
-		{
-			get
-			{
-				return this.GetTable<KyThi>();
-			}
-		}
-		
 		public System.Data.Linq.Table<BoDe> BoDes
 		{
 			get
@@ -95,14 +90,6 @@ namespace DoAnCuoiKy.Model
 			get
 			{
 				return this.GetTable<CauHoi>();
-			}
-		}
-		
-		public System.Data.Linq.Table<CauHoiTrongBoDe> CauHoiTrongBoDes
-		{
-			get
-			{
-				return this.GetTable<CauHoiTrongBoDe>();
 			}
 		}
 		
@@ -122,6 +109,14 @@ namespace DoAnCuoiKy.Model
 			}
 		}
 		
+		public System.Data.Linq.Table<KyThi> KyThis
+		{
+			get
+			{
+				return this.GetTable<KyThi>();
+			}
+		}
+		
 		public System.Data.Linq.Table<USER> USERs
 		{
 			get
@@ -131,139 +126,67 @@ namespace DoAnCuoiKy.Model
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.KyThi")]
-	public partial class KyThi : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.BoDe")]
+	public partial class BoDe : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaKT;
+		private string _MaBD;
 		
-		private string _Ngay;
-		
-		private string _MaDT;
-		
-		private string _ThoiGian;
-		
-		private string _MaHV;
+		private string _MaDK;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaKTChanging(string value);
-    partial void OnMaKTChanged();
-    partial void OnNgayChanging(string value);
-    partial void OnNgayChanged();
-    partial void OnMaDTChanging(string value);
-    partial void OnMaDTChanged();
-    partial void OnThoiGianChanging(string value);
-    partial void OnThoiGianChanged();
-    partial void OnMaHVChanging(string value);
-    partial void OnMaHVChanged();
+    partial void OnMaBDChanging(string value);
+    partial void OnMaBDChanged();
+    partial void OnMaDKChanging(string value);
+    partial void OnMaDKChanged();
     #endregion
 		
-		public KyThi()
+		public BoDe()
 		{
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKT", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaKT
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaBD", DbType="VarChar(20) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaBD
 		{
 			get
 			{
-				return this._MaKT;
+				return this._MaBD;
 			}
 			set
 			{
-				if ((this._MaKT != value))
+				if ((this._MaBD != value))
 				{
-					this.OnMaKTChanging(value);
+					this.OnMaBDChanging(value);
 					this.SendPropertyChanging();
-					this._MaKT = value;
-					this.SendPropertyChanged("MaKT");
-					this.OnMaKTChanged();
+					this._MaBD = value;
+					this.SendPropertyChanged("MaBD");
+					this.OnMaBDChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ngay", DbType="NVarChar(50)")]
-		public string Ngay
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDK", DbType="VarChar(20) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaDK
 		{
 			get
 			{
-				return this._Ngay;
+				return this._MaDK;
 			}
 			set
 			{
-				if ((this._Ngay != value))
+				if ((this._MaDK != value))
 				{
-					this.OnNgayChanging(value);
+					this.OnMaDKChanging(value);
 					this.SendPropertyChanging();
-					this._Ngay = value;
-					this.SendPropertyChanged("Ngay");
-					this.OnNgayChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDT", DbType="NChar(10)")]
-		public string MaDT
-		{
-			get
-			{
-				return this._MaDT;
-			}
-			set
-			{
-				if ((this._MaDT != value))
-				{
-					this.OnMaDTChanging(value);
-					this.SendPropertyChanging();
-					this._MaDT = value;
-					this.SendPropertyChanged("MaDT");
-					this.OnMaDTChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThoiGian", DbType="NVarChar(50)")]
-		public string ThoiGian
-		{
-			get
-			{
-				return this._ThoiGian;
-			}
-			set
-			{
-				if ((this._ThoiGian != value))
-				{
-					this.OnThoiGianChanging(value);
-					this.SendPropertyChanging();
-					this._ThoiGian = value;
-					this.SendPropertyChanged("ThoiGian");
-					this.OnThoiGianChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHV", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaHV
-		{
-			get
-			{
-				return this._MaHV;
-			}
-			set
-			{
-				if ((this._MaHV != value))
-				{
-					this.OnMaHVChanging(value);
-					this.SendPropertyChanging();
-					this._MaHV = value;
-					this.SendPropertyChanged("MaHV");
-					this.OnMaHVChanged();
+					this._MaDK = value;
+					this.SendPropertyChanged("MaDK");
+					this.OnMaDKChanged();
 				}
 			}
 		}
@@ -285,51 +208,6 @@ namespace DoAnCuoiKy.Model
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.BoDe")]
-	public partial class BoDe
-	{
-		
-		private string _MaDK;
-		
-		private string _MaBD;
-		
-		public BoDe()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDK", DbType="NChar(10)")]
-		public string MaDK
-		{
-			get
-			{
-				return this._MaDK;
-			}
-			set
-			{
-				if ((this._MaDK != value))
-				{
-					this._MaDK = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaBD", DbType="NChar(10)")]
-		public string MaBD
-		{
-			get
-			{
-				return this._MaBD;
-			}
-			set
-			{
-				if ((this._MaBD != value))
-				{
-					this._MaBD = value;
-				}
 			}
 		}
 	}
@@ -588,69 +466,6 @@ namespace DoAnCuoiKy.Model
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CauHoiTrongBoDe")]
-	public partial class CauHoiTrongBoDe
-	{
-		
-		private string _MaDK;
-		
-		private string _MaBD;
-		
-		private string _MaCH;
-		
-		public CauHoiTrongBoDe()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDK", DbType="NChar(10)")]
-		public string MaDK
-		{
-			get
-			{
-				return this._MaDK;
-			}
-			set
-			{
-				if ((this._MaDK != value))
-				{
-					this._MaDK = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaBD", DbType="NChar(10)")]
-		public string MaBD
-		{
-			get
-			{
-				return this._MaBD;
-			}
-			set
-			{
-				if ((this._MaBD != value))
-				{
-					this._MaBD = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCH", DbType="NChar(10)")]
-		public string MaCH
-		{
-			get
-			{
-				return this._MaCH;
-			}
-			set
-			{
-				if ((this._MaCH != value))
-				{
-					this._MaCH = value;
-				}
-			}
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DeThi")]
 	public partial class DeThi : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -724,7 +539,7 @@ namespace DoAnCuoiKy.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaBD", DbType="NChar(10)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaBD", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaBD
 		{
 			get
@@ -744,7 +559,7 @@ namespace DoAnCuoiKy.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCH", DbType="NChar(10)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCH", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaCH
 		{
 			get
@@ -844,6 +659,164 @@ namespace DoAnCuoiKy.Model
 				{
 					this._Diem = value;
 				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.KyThi")]
+	public partial class KyThi : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _MaKT;
+		
+		private string _Ngay;
+		
+		private string _MaDT;
+		
+		private string _ThoiGian;
+		
+		private string _MaHV;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaKTChanging(string value);
+    partial void OnMaKTChanged();
+    partial void OnNgayChanging(string value);
+    partial void OnNgayChanged();
+    partial void OnMaDTChanging(string value);
+    partial void OnMaDTChanged();
+    partial void OnThoiGianChanging(string value);
+    partial void OnThoiGianChanged();
+    partial void OnMaHVChanging(string value);
+    partial void OnMaHVChanged();
+    #endregion
+		
+		public KyThi()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKT", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaKT
+		{
+			get
+			{
+				return this._MaKT;
+			}
+			set
+			{
+				if ((this._MaKT != value))
+				{
+					this.OnMaKTChanging(value);
+					this.SendPropertyChanging();
+					this._MaKT = value;
+					this.SendPropertyChanged("MaKT");
+					this.OnMaKTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ngay", DbType="NVarChar(50)")]
+		public string Ngay
+		{
+			get
+			{
+				return this._Ngay;
+			}
+			set
+			{
+				if ((this._Ngay != value))
+				{
+					this.OnNgayChanging(value);
+					this.SendPropertyChanging();
+					this._Ngay = value;
+					this.SendPropertyChanged("Ngay");
+					this.OnNgayChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDT", DbType="NChar(10)")]
+		public string MaDT
+		{
+			get
+			{
+				return this._MaDT;
+			}
+			set
+			{
+				if ((this._MaDT != value))
+				{
+					this.OnMaDTChanging(value);
+					this.SendPropertyChanging();
+					this._MaDT = value;
+					this.SendPropertyChanged("MaDT");
+					this.OnMaDTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThoiGian", DbType="NVarChar(50)")]
+		public string ThoiGian
+		{
+			get
+			{
+				return this._ThoiGian;
+			}
+			set
+			{
+				if ((this._ThoiGian != value))
+				{
+					this.OnThoiGianChanging(value);
+					this.SendPropertyChanging();
+					this._ThoiGian = value;
+					this.SendPropertyChanged("ThoiGian");
+					this.OnThoiGianChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHV", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaHV
+		{
+			get
+			{
+				return this._MaHV;
+			}
+			set
+			{
+				if ((this._MaHV != value))
+				{
+					this.OnMaHVChanging(value);
+					this.SendPropertyChanging();
+					this._MaHV = value;
+					this.SendPropertyChanged("MaHV");
+					this.OnMaHVChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
