@@ -36,14 +36,14 @@ namespace DoAnCuoiKy
                 else if (db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 2) != null)
                 {
                     MessageBox.Show("LOGIN GIÁO VIÊN");
-                    Form1 f = new Form1();
+                    ViewGiaoVien f = new ViewGiaoVien();
                     this.Hide();
                     f.ShowDialog();
                 }
                 else if (db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 1) != null)
                 {
                     MessageBox.Show("LOGIN HỌC SINH");
-                    Form2 f = new Form2();
+                    ViewPhanHeHS f = new ViewPhanHeHS((db.USERs.SingleOrDefault(u => u.f_TenDangNhap == tendangnhap && u.f_MatKhau == matkhau && u.f_IDPhanQuyen == 1).f_MaSo).ToString());
                     this.Hide();
                     f.ShowDialog();
                     this.Show();

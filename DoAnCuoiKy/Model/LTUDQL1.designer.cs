@@ -45,6 +45,9 @@ namespace DoAnCuoiKy.Model
     partial void InsertUSER(USER instance);
     partial void UpdateUSER(USER instance);
     partial void DeleteUSER(USER instance);
+    partial void InsertDongGopCauHoi(DongGopCauHoi instance);
+    partial void UpdateDongGopCauHoi(DongGopCauHoi instance);
+    partial void DeleteDongGopCauHoi(DongGopCauHoi instance);
     #endregion
 		
 		public LTUDQL1DataContext() : 
@@ -122,6 +125,14 @@ namespace DoAnCuoiKy.Model
 			get
 			{
 				return this.GetTable<USER>();
+			}
+		}
+		
+		public System.Data.Linq.Table<DongGopCauHoi> DongGopCauHois
+		{
+			get
+			{
+				return this.GetTable<DongGopCauHoi>();
 			}
 		}
 	}
@@ -1050,6 +1061,212 @@ namespace DoAnCuoiKy.Model
 					this._f_IDPhanQuyen = value;
 					this.SendPropertyChanged("f_IDPhanQuyen");
 					this.Onf_IDPhanQuyenChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DongGopCauHoi")]
+	public partial class DongGopCauHoi : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _ID;
+		
+		private string _NoiDung;
+		
+		private string _DapAnA;
+		
+		private string _DapAnB;
+		
+		private string _DapAnC;
+		
+		private string _DapAnD;
+		
+		private string _DapAnDung;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(string value);
+    partial void OnIDChanged();
+    partial void OnNoiDungChanging(string value);
+    partial void OnNoiDungChanged();
+    partial void OnDapAnAChanging(string value);
+    partial void OnDapAnAChanged();
+    partial void OnDapAnBChanging(string value);
+    partial void OnDapAnBChanged();
+    partial void OnDapAnCChanging(string value);
+    partial void OnDapAnCChanged();
+    partial void OnDapAnDChanging(string value);
+    partial void OnDapAnDChanged();
+    partial void OnDapAnDungChanging(string value);
+    partial void OnDapAnDungChanged();
+    #endregion
+		
+		public DongGopCauHoi()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this.OnIDChanging(value);
+					this.SendPropertyChanging();
+					this._ID = value;
+					this.SendPropertyChanged("ID");
+					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NoiDung", DbType="NVarChar(MAX)")]
+		public string NoiDung
+		{
+			get
+			{
+				return this._NoiDung;
+			}
+			set
+			{
+				if ((this._NoiDung != value))
+				{
+					this.OnNoiDungChanging(value);
+					this.SendPropertyChanging();
+					this._NoiDung = value;
+					this.SendPropertyChanged("NoiDung");
+					this.OnNoiDungChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DapAnA", DbType="NVarChar(MAX)")]
+		public string DapAnA
+		{
+			get
+			{
+				return this._DapAnA;
+			}
+			set
+			{
+				if ((this._DapAnA != value))
+				{
+					this.OnDapAnAChanging(value);
+					this.SendPropertyChanging();
+					this._DapAnA = value;
+					this.SendPropertyChanged("DapAnA");
+					this.OnDapAnAChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DapAnB", DbType="NVarChar(MAX)")]
+		public string DapAnB
+		{
+			get
+			{
+				return this._DapAnB;
+			}
+			set
+			{
+				if ((this._DapAnB != value))
+				{
+					this.OnDapAnBChanging(value);
+					this.SendPropertyChanging();
+					this._DapAnB = value;
+					this.SendPropertyChanged("DapAnB");
+					this.OnDapAnBChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DapAnC", DbType="NVarChar(MAX)")]
+		public string DapAnC
+		{
+			get
+			{
+				return this._DapAnC;
+			}
+			set
+			{
+				if ((this._DapAnC != value))
+				{
+					this.OnDapAnCChanging(value);
+					this.SendPropertyChanging();
+					this._DapAnC = value;
+					this.SendPropertyChanged("DapAnC");
+					this.OnDapAnCChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DapAnD", DbType="NVarChar(MAX)")]
+		public string DapAnD
+		{
+			get
+			{
+				return this._DapAnD;
+			}
+			set
+			{
+				if ((this._DapAnD != value))
+				{
+					this.OnDapAnDChanging(value);
+					this.SendPropertyChanging();
+					this._DapAnD = value;
+					this.SendPropertyChanged("DapAnD");
+					this.OnDapAnDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DapAnDung", DbType="NVarChar(MAX)")]
+		public string DapAnDung
+		{
+			get
+			{
+				return this._DapAnDung;
+			}
+			set
+			{
+				if ((this._DapAnDung != value))
+				{
+					this.OnDapAnDungChanging(value);
+					this.SendPropertyChanging();
+					this._DapAnDung = value;
+					this.SendPropertyChanged("DapAnDung");
+					this.OnDapAnDungChanged();
 				}
 			}
 		}

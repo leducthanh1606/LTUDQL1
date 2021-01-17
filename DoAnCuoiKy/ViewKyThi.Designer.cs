@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.ThiSinhRPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.KetQuaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
@@ -57,7 +58,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtChonKy = new System.Windows.Forms.TextBox();
             this.btn_LoadReport = new System.Windows.Forms.Button();
-            this.ThiSinhRPBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.ThiSinhRPBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.KetQuaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -71,8 +72,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_KyThi)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ThiSinhRPBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ThiSinhRPBindingSource
+            // 
+            this.ThiSinhRPBindingSource.DataSource = typeof(DoAnCuoiKy.Model.ThiSinhRP);
             // 
             // KetQuaBindingSource
             // 
@@ -368,15 +372,11 @@
             // 
             this.btn_LoadReport.Location = new System.Drawing.Point(665, 348);
             this.btn_LoadReport.Name = "btn_LoadReport";
-            this.btn_LoadReport.Size = new System.Drawing.Size(125, 34);
+            this.btn_LoadReport.Size = new System.Drawing.Size(161, 34);
             this.btn_LoadReport.TabIndex = 5;
             this.btn_LoadReport.Text = "Xem thống kê";
             this.btn_LoadReport.UseVisualStyleBackColor = true;
             this.btn_LoadReport.Click += new System.EventHandler(this.btn_LoadReport_Click);
-            // 
-            // ThiSinhRPBindingSource
-            // 
-            this.ThiSinhRPBindingSource.DataSource = typeof(DoAnCuoiKy.Model.ThiSinhRP);
             // 
             // ViewKyThi
             // 
@@ -392,6 +392,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KyThi";
             this.Load += new System.EventHandler(this.ViewKyThi_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ThiSinhRPBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.KetQuaBindingSource)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -408,7 +409,6 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ThiSinhRPBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

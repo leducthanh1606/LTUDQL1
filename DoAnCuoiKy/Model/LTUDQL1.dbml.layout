@@ -38,5 +38,11 @@
         <elementListCompartment Id="f8cc4893-205d-4521-a577-411221d1446a" absoluteBounds="7.8900000000000006, 3.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="fc1d97f7-2abc-4d1a-a8b8-1164079ff404" absoluteBounds="4.375, 5.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LTUDQL1DataContext/DongGopCauHoi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b80d6fa3-9483-464b-b7a1-219e2314a63f" absoluteBounds="4.39, 5.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

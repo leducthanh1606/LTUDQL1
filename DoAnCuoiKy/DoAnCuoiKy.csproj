@@ -84,11 +84,18 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Model\HSThongTinRP.cs" />
+    <Compile Include="ViewHSLamBaiOn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="ViewHSLamBaiOn.Designer.cs">
+      <DependentUpon>ViewHSLamBaiOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPhanHeHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPhanHeHS.Designer.cs">
+      <DependentUpon>ViewPhanHeHS.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\KetQuaRP.cs" />
     <Compile Include="Model\LTUDQL1.designer.cs">
@@ -120,17 +127,47 @@
     <Compile Include="ViewDeThi.Designer.cs">
       <DependentUpon>ViewDeThi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="ViewGiaoVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ViewGiaoVien.Designer.cs">
+      <DependentUpon>ViewGiaoVien.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewHocSinh.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewHocSinh.Designer.cs">
       <DependentUpon>ViewHocSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHSDongGop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewHSDongGop.Designer.cs">
+      <DependentUpon>ViewHSDongGop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHSLamBai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewHSLamBai.Designer.cs">
+      <DependentUpon>ViewHSLamBai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHSOnThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewHSOnThi.Designer.cs">
+      <DependentUpon>ViewHSOnThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHSThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewHSThi.Designer.cs">
+      <DependentUpon>ViewHSThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHSThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewHSThongTin.Designer.cs">
+      <DependentUpon>ViewHSThongTin.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewKyThi.cs">
       <SubType>Form</SubType>
@@ -154,6 +191,13 @@
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\HSThongTinRP.rdlc" />
+    <EmbeddedResource Include="ViewHSLamBaiOn.resx">
+      <DependentUpon>ViewHSLamBaiOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPhanHeHS.resx">
+      <DependentUpon>ViewPhanHeHS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewAdmin.resx">
       <DependentUpon>ViewAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,11 +210,26 @@
     <EmbeddedResource Include="ViewDeThi.resx">
       <DependentUpon>ViewDeThi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ViewGiaoVien.resx">
+      <DependentUpon>ViewGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewHocSinh.resx">
       <DependentUpon>ViewHocSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHSDongGop.resx">
+      <DependentUpon>ViewHSDongGop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHSLamBai.resx">
+      <DependentUpon>ViewHSLamBai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHSOnThi.resx">
+      <DependentUpon>ViewHSOnThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHSThi.resx">
+      <DependentUpon>ViewHSThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHSThongTin.resx">
+      <DependentUpon>ViewHSThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewKyThi.resx">
       <DependentUpon>ViewKyThi.cs</DependentUpon>
@@ -199,6 +258,7 @@
       <DependentUpon>LTUDQL1.dbml</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DoAnCuoiKy.Model.HSThongTinRP.datasource" />
     <None Include="Properties\DataSources\DoAnCuoiKy.Model.KetQua.datasource" />
     <None Include="Properties\DataSources\DoAnCuoiKy.Model.KetQuaRP.datasource" />
     <None Include="Properties\DataSources\DoAnCuoiKy.Model.KyThi.datasource" />
